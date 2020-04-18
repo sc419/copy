@@ -12,6 +12,6 @@ function copy(text){
 	document.body.appendChild($text);
 	$text.select();
 	document.execCommand('copy', true);
-	document.body.removeChild($text);
+	$text.remove();
 	current.focus();
 }
